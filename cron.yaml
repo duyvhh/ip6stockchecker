@@ -1,0 +1,4 @@
+cron:
+- description: checker
+  url: /ip6_stock_checker
+  schedule: every 30 minutes
