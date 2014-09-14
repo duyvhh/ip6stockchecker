@@ -21,7 +21,7 @@ class CheckerHandler(webapp2.RequestHandler):
 
         if not "unavailable" in option['shippingLead'] or option['isBuyable']:
             mail.send_mail(sender="<sender>",
-                           to="<sender>",
+                           to="<recipient>",
                            subject="iPhone 6 is now available in Singapore store. Act now!!!",
                            body="Act now.")
 
