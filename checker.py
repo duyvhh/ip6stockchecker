@@ -19,7 +19,7 @@ class CheckerHandler(webapp2.RequestHandler):
         result = json.load(response)
         option = result['body']['content']['selected']['purchaseOptions']
 
-        if not "unavailable" in option['shippingLead'] or option['isBuyable']:
+        if not "Unavailable" in option['shippingLead'] or option['isBuyable']:
             mail.send_mail(sender="<sender>",
                            to="<recipient>",
                            subject="iPhone 6 is now available in Singapore store. Act now!!!",
